@@ -1,2 +1,2 @@
 ## Ansible
-Here you will find Ansible Playbook files and configuration files used in automating Docker contianer configuration and deployment.
+Here you will find Ansible Playbook files and configuration files used in automating Docker contianer configuration and deployment. These files were created for the Cloud Virtualization and Security project to configure and deploy three web servers and one ELK server. Deployment and configuration was done using a jump box provisioner. A description of how these files were used to develop the cloud network can be found here [Cloud Security ELK Stack Project](https://github.com/cjspencer/UCB-Cybersecurity/tree/main/Cloud%20Security%20ELK%20Stack%20Project)
