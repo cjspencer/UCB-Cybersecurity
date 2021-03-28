@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![](https://github.com/cjspencer/UCB-Cybersecurity/blob/main/Diagrams/RedTeamResourceGroup.png?raw=true)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [filebeat-playbook.yml](..\Ansible\filebeat-playbook.yml) 
+  - [filebeat-playbook.yml](https://github.com/cjspencer/UCB-Cybersecurity/blob/main/Ansible/filebeat-playbook.yml) 
 
 This document contains the following details:
 
@@ -41,7 +41,7 @@ The configuration details of each machine may be found below.
 | Web1      | Web Server (DVWA) | 10.3.0.5                     | Linux Ubuntu 18.04 |
 | Web2      | Web Server (DVWA) | 10.3.0.6                     | Linux Ubuntu 18.04 |
 | Web3      | Web Server (DVWA) | 10.3.0.7                     | Linux Ubuntu 18.04 |
-| Elk1      | Elk Server        | 20.57.160.75<br />10.4.04    | Linux Ubuntu 18.04 |
+| ELK1      | ELK Server        | 20.57.160.75<br />10.4.04    | Linux Ubuntu 18.04 |
 
 ### Access Policies
 
@@ -67,9 +67,9 @@ A summary of the access policies in place can be found in the table below.
 | JumpBox          | No                      | Personal IP (administrative) |
 | RedTeamLB        | Yes                     | Any                          |
 | Web1, Web2, Web3 | Yes - Through RedTeamLB | 104.45.225.139<br />10.3.04  |
-| Elk Server       | No                      | 10.3.0.4                     |
+| ELK Server       | No                      | 10.3.0.4                     |
 
-### Elk Configuration
+### ELK Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automated configuration is more efficient, allows for replication and repeatability across multiple containers, and is less error prone than manual configuration across multiple devices.
 
@@ -77,12 +77,12 @@ The playbook implements the following tasks:
 
 - Installation of modules and software (Docker.io, Python3-pip, YAML Docker module)
 - Increase virtual memory of containers
-- Download and configure Elk Docker container
+- Download and configure ELK Docker container
 - Set ports
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![elk_docker_ps](C:\Users\chadw\Documents\UCB-Cybersecurity\Cloud Security ELK Stack Project\Images\elk_docker_ps.PNG)
+![elk_docker_ps](https://github.com/cjspencer/UCB-Cybersecurity/blob/main/Images/elk_docker_ps.PNG?raw=true)
 
 ### Target Machines & Beats
 
