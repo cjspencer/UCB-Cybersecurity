@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![](https://github.com/cjspencer/UCB-Cybersecurity/blob/main/Diagrams/RedTeamResourceGroup.png?raw=true)
+![alt text](https://github.com/cjspencer/UCB-Cybersecurity/blob/main/Diagrams/RedTeamResourceGroup.png?raw=true)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -36,7 +36,8 @@ The configuration details of each machine may be found below.
 
 | Name      | Function          | IP Address                   | Operating System   |
 | --------- | ----------------- | ---------------------------- | ------------------ |
-| JumpBox   | Gateway           | 40.118.189.172<br />10.3.0.4 | Linux Ubuntu 18.04 |
+| JumpBox   | Gateway           | 40.118.189.172               | Linux Ubuntu 18.04 |
+|           |                   | 10.3.0.4                     
 | RedTeamLB | Load Balancer     | 104.45.225.139               | Linux Ubuntu 18.04 |
 | Web1      | Web Server (DVWA) | 10.3.0.5                     | Linux Ubuntu 18.04 |
 | Web2      | Web Server (DVWA) | 10.3.0.6                     | Linux Ubuntu 18.04 |
